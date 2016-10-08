@@ -33,4 +33,8 @@ That Dockerfile is [here](https://github.com/lukemarsden/weave-scope-as-global-s
 
 Now that we have this working, we would love to collaborate more with Docker to figure out how to enable this use-case natively in Swarm services without this hack. :-)
 
+Relates issue: [#25303](https://github.com/docker/docker/issues/25303).
+
+TODO: figure out exactly which capabilities and flags are required, and raise an issue on GitHub to capture the goal of getting Scope working as a Swarm service without this hack, linking to the above issue.
+
 See also: [Notes document](https://docs.google.com/document/d/1Eie02teDKvxSrKIR9RHh340le-BgYExKzT6wQ2axil8/edit#)
