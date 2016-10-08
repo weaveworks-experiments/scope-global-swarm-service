@@ -31,4 +31,6 @@ You can run a [load test](https://github.com/microservices-demo/load-test) to ap
 Because Swarm services don't support `--privileged`, `--net=host` and `--pid=host` we had to workaround this by using a "jump" container: the service starts up a container which contains the docker client and has the docker socket bind-mounted so that it can run a non-background container privileged container in the usual way using the `scope launch` shell script.
 That Dockerfile is [here](https://github.com/lukemarsden/weave-scope-as-global-swarm-service/blob/master/Dockerfile) and is at `lmarsden/scope-runner` on Docker Hub.
 
+Now that we have this working, we would love to collaborate more with Docker to figure out how to enable this use-case natively in Swarm services without this hack. :-)
+
 See also: [Notes document](https://docs.google.com/document/d/1Eie02teDKvxSrKIR9RHh340le-BgYExKzT6wQ2axil8/edit#)
